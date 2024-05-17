@@ -3,5 +3,8 @@
 @tailwind utilities;
 
 @base {
-    body { font-family: 'Lato', sans-serif; }
+    body { font-family: 'Lato', sans-serif; },
+    .bg-pos-custom {
+        background-position: -390px -65px;
+      }
 }
