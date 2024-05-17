@@ -5,120 +5,160 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>University of Porto</title>
     <link rel="icon" href="./img/favicon.png">
-    <link href="/portal/static/css/font-awesome/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./input.css">
     <!-- Lato --> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 <body>
-    <header>
-        <div class="bg-[#333] px-4 w-full mx-auto justify-items-center items-center font-semibold">
-            <div class="mx-32">
-                <div class="flex flex-row justify-between text-center text-[#fff] text-sm leading-10">
-                    <div class="flex flex-row gap-8">
-                        <div class="flex flex-row gap-2 items-center">
-                            <span>About the University</span>
-                            <i class="fas fa-caret-down text-[#adafb3]"></i>
-                        </div>
-                        <div class="flex flex-row gap-2 items-center">
-                            <span>Faculties</span>
-                            <i class="fas fa-caret-down text-[#adafb3]"></i>
-                        </div>
+<header>
+    <div class="bg-[#333] px-4 w-full mx-auto justify-items-center items-center font-semibold">
+        <div class="mx-32">
+            <div class="flex flex-row justify-between text-center text-[#fff] text-sm leading-10">
+                <div class="flex flex-row gap-8">
+                    <div class="flex flex-row gap-2 items-center">
+                        <span>About the University</span>
+                        <i class="fas fa-caret-down text-[#adafb3]"></i>
                     </div>
-                    <div class="flex flex-row gap-12">
-                        <div class="space-x-4">
-                            <i class="fa-solid fa-newspaper"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-youtube"></i>
-                            <i class="fa-brands fa-linkedin"></i>
-                            <i class="fa-brands fa-x-twitter"></i>
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </div>
-                        <div class="space-x-4">
-                            <a class="text-gray-400" title="Change language to Portuguese" href="#">PT</a>
-                            <a title="Change language to English" href="#">EN</a>                            
-                        </div>
+                    <div class="flex flex-row gap-2 items-center">
+                        <span>Faculties</span>
+                        <i class="fas fa-caret-down text-[#adafb3]"></i>
+                    </div>
+                </div>
+                <div class="flex flex-row gap-12">
+                    <div class="space-x-4">
+                        <i class="fa-solid fa-newspaper"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="space-x-4">
+                        <a class="text-gray-400" title="Change language to Portuguese" href="#">PT</a>
+                        <a title="Change language to English" href="#">EN</a>                            
                     </div>
                 </div>
             </div>
         </div>
-        <div class="px-4 w-full bg-[#d5d5d5]">
-            <div class="mx-32">
-                <div class="flex flex-row justify-between items-center h-28">
-                    <div class="h-full">
-                        <a href="#">
-                            <img class="w-96  h-full" src="./img/logo.svg" alt="">
-                        </a>
+    </div>
+    <div class="px-4 w-full bg-[#d5d5d5]">
+        <div class="mx-32">
+            <div class="flex flex-row justify-between items-center h-28">
+                <div class="h-full">
+                    <a href="#">
+                        <img class="w-96  h-full" src="./img/logo.svg" alt="">
+                    </a>
+                </div>
+                
+                
+                <div class="flex flex-row justify-between gap-10">
+                    <div class="transform uppercase text-[#333] text-lg font-bold flex flex-row gap-8">
+                        <a href="#">Study</a>
+                        <a href="#">Research</a>
+                        <a href="#">Innovate</a>
+                        <a href="#">Live</a>
+                        <a href="#">Explore</a>
                     </div>
-                    
-                    
-                    <div class="flex flex-row justify-between gap-10">
-                        <div class="transform uppercase text-[#333] text-lg font-bold flex flex-row gap-8">
-                            <a href="#">Study</a>
-                            <a href="#">Research</a>
-                            <a href="#">Innovate</a>
-                            <a href="#">Live</a>
-                            <a href="#">Explore</a>
+                    <div class="text-[#212529]">
+                        <form class="relative" id="search" action="#">
+                            <input class="max-w-32 bg-transparent border-b-[1px] border-[#212529] outline-0 " type="text" placeholder="Search">
+                            <span class="absolute top-0 right-0" role="button">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="min-h-[600px] bg-[url(./img/banner-bg.jpeg)] bg-no-repeat bg-cover bg-center">
+    <div class="px-4">
+        <div class="mx-32">
+            <div class="flex flex-col justify-end gap-14">
+                <div class="h-56"></div>
+                <div class="relative">
+                    <div class="absolute w-full">
+                        <div class="absolute -left-32 top-0 text-center bg-[#a18a4d] border-[#000] border-[1px] px-[0.55rem] py-[0.375rem] leading-6">
+                            <i class="fas fa-chevron-left"></i>
                         </div>
-                        <div class="text-[#212529]">
-                            <form class="relative" id="search" action="#">
-                                <input class="max-w-32 bg-transparent border-b-[1px] border-[#212529] outline-0 " type="text" placeholder="Search" id="searchText" name="searchKeyword" onkeypress="handle">
-                                <span class="absolute top-0 right-0" role="button">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </span>
+                        <div class="absolute -right-32 top-0 text-center bg-[#a18a4d] border-[#000] border-[1px] px-[0.55rem] py-[0.375rem] leading-6">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div class="w-[480px] h-60 text-[#d5d5d5] space-y-6 bg-black/45 p-5">
+                        <h2 class="text-4xl font-bold text-[#fff] text-[1.6em]">Get to know the U.Porto Strategic Plan 2030!</h2>
+                        <p>New cocument sets out the main strategic goals and priorities to be achieved by the University until 2030.</p>
+                        <div>
+                            <a class="bg-[#a18a4d] text-[#333] font-bold py-1 px-2" href="#">See More</a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="px-4 py-24">
+    <div class="mx-32 ">
+        <div class="border-b-2">
+            <div class="flex flex-col gap-12 w-full mb-16">
+                <div>
+                    <h1 class="text-[#a18a4d] text-5xl font-light">Study</h1>
+                </div>
+                <div class="flex flex-row gap-14 justify-between">
+                    <div class="self-start">
+                        <h4 class="text-[#333] font-semibold text-3xl text-left">Your future is here!</h4>
+                    </div>
+                    <div class="max-w-2/3">
+                        <p class="text-[#212529] text-xl font-light text-left">
+                            Gathering the most complete offer of training programmes in Portugal, the 14 faculties of the U.Porto
+                            <br>
+                            offer unique conditions to those who want to build an academic path of excellence and properly valued by<br/> the labour market.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-14">
+            <div class="flex flex-col gap-12 w-full mb-16">
+                <div class="flex flex-col gap-14">
+                    <div>
+                        <h4 class="text-[#333] font-semibold text-3xl text-left">Which course are you looking for?</h4>
+                    </div>
+                    <div class="flex flex-row justify-between">
+                        <div>
+                            <form>
+                                <div>
+                                <select>
+                                    <option value="L,MI,M,D">All</option>
+                                    <option value="L,MI">Bachelor's and Integrated Master’s Degrees</option>
+                                    <option value="M">Master’s Degrees</option>
+                                    <option value="D">Doctorates</option>
+                                </select>
+                                </div>
+                                <div>
+                                    <input class="ui-autocomplete ui-autocomplete-input" name="course" style="width: 100%" type="text" id="tags" placeholder="Please enter course keywords..." value="" autocomplete="off">
+                                    <ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" unselectable="on" style="display: none;"></ul>
+                                </div>
+                                <div class="study-submit mt-2 right">
+                                    <input id="destination" type="hidden" name="type" value="MI,L,M,D">
+                                    <input type="Submit" value="Search">
+                                    <span id="course-search-error" style="color: black;"></span>
+                                </div>
                             </form>
                         </div>
+                        <div></div>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
-
-    <section class="min-h-[600px] bg-[url(./img/banner-bg.jpeg)] bg-no-repeat bg-cover bg-center">
-        <div class="px-4">
-            <div class="mx-32">
-                <div class="flex flex-col justify-end gap-14">
-                    <div class="h-56"></div>
-                    <div class="relative">
-                        <div class="absolute w-full">
-                            <div class="absolute -left-32 top-0 text-center bg-[#a18a4d] border-[#000] border-[1px] px-[0.55rem] py-[0.375rem] leading-6">
-                                <i class="fas fa-chevron-left"></i>
-                            </div>
-                            <div class="absolute -right-32 top-0 text-center bg-[#a18a4d] border-[#000] border-[1px] px-[0.55rem] py-[0.375rem] leading-6">
-                                <i class="fas fa-chevron-right"></i>
-                            </div>
-                        </div>
-                        <div class="w-[480px] h-60 text-[#d5d5d5] space-y-6 bg-black/45 p-5">
-                            <h2 class="text-4xl font-bold text-[#fff] text-[1.6em]">Get to know the U.Porto Strategic Plan 2030!</h2>
-                            <p>New cocument sets out the main strategic goals and priorities to be achieved by the University until 2030.</p>
-                            <div>
-                                <a class="bg-[#a18a4d] text-[#333] font-bold py-1 px-2" href="#">See More</a>
-                            </div> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="">
-        <div class="px-4 py-32">
-            <div class="mx-32">
-                <div class="flex flex-col">
-                    <div>
-                        <h1 class="text-[#a18a4d] text-5xl font-light">Study</h1>
-                    </div>
-                    <div class="flex flex-row justify-evenly">
-                        <div class="w-[45%]">
-                            <h4 class="text-[#333] font-semibold text-3xl text-left">Your future is here!</h4>
-                        </div>
-                        <div>
-                            <p class="text-[#212529] text-xl font-light">Gathering the most complete offer of training programmes in Portugal, the 14 faculties of the U.Porto offer unique conditions to those who want to build an academic path of excellence and properly valued by the labour market.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>  
+        
+    </div>
+</section> 
 </body>
 </html>
