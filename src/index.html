@@ -45,24 +45,27 @@
         </div>
         <div class="px-4 w-full bg-[#d5d5d5]">
             <div class="mx-32">
-                <div class="flex flex-row justify-between h-32">
-                    <div>
-                        
-                        <img src="./img/logo.svg" alt="">
-                        
+                <div class="flex flex-row justify-between items-center h-28">
+                    <div class="h-full">
+                        <a href="#">
+                            <img class="w-96  h-full" src="./img/logo.svg" alt="">
+                        </a>
                     </div>
-                    <div class="flex flex-row justify-between">
-                        <div class="transform uppercase text-[#333] text-base font-bold">
+                    
+                    
+                    <div class="flex flex-row justify-between gap-10">
+                        <div class="transform uppercase text-[#333] text-lg font-bold flex flex-row gap-8">
                             <a href="#">Study</a>
                             <a href="#">Research</a>
                             <a href="#">Innovate</a>
                             <a href="#">Live</a>
                             <a href="#">Explore</a>
                         </div>
-                        <div>
+                        <div class="text-[#212529]">
                             <form class="relative" id="search" action="#">
-                                <input class="absolute" type="text" placeholder="Type Something" id="searchText" name="searchKeyword" onkeypress="handle">
-                                <span class="top-0 right-0" role="button">
+                                <input class="max-w-32 bg-transparent border-b-[1px] border-[#212529] outline-0 " type="text" placeholder="Search" id="searchText" name="searchKeyword" onkeypress="handle">
+                                <span class="absolute top-0 right-0" role="button">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
                                 </span>
                             </form>
                         </div>
@@ -71,5 +74,14 @@
             </div>
         </div>
     </header>
+
+    <section class="min-h-[600px] bg-[url(./img/banner-bg.jpeg)] bg-no-repeat bg-cover bg-center">
+        <!-- <div class="absolute left-0 top-50%translate-y-1/2">
+            <i class="fas fa-chevron-left"></i>
+        </div> -->
+        <div class="mx-32">
+            
+        </div>
+    </section>
 </body>
 </html>
